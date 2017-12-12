@@ -1,0 +1,42 @@
+-- Data Warehouse Script
+
+CREATE DATABASE "DWH"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+CREATE TABLE dim_elevation
+(
+    state varchar(2),
+    avg_elevation numeric,
+    max_elevation numeric,
+    min_elevation numeric
+);
+
+CREATE TABLE dim_plants
+(
+    state varchar(2),
+    plant_name varchar
+);
+
+CREATE TABLE dim_population
+(
+    state varchar(2),
+    avg_population_per_city numeric,
+    total_population numeric,
+    min_population numeric,
+    max_population numeric
+);
+
+CREATE TABLE dim_weather_yearly
+(
+    state varchar(2),
+    avg_temp numeric,
+    avg_max_temp numeric,
+    avg_min_temp numeric,
+    avg_sun numeric,
+    avg_rain numeric,
+    avg_snow numeric
+);
