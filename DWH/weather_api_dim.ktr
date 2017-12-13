@@ -747,7 +747,7 @@ This creates the necessary table in the database.</note>
       <schema_name/>
     </partitioning>
     <filename>C:\Users\amy\Downloads\zip_codes_states.csv</filename>
-    <filename_field>CSV</filename_field>
+    <filename_field>filename</filename_field>
     <rownum_field/>
     <include_filename>N</include_filename>
     <separator>,</separator>
